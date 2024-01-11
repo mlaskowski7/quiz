@@ -6,7 +6,6 @@ import lombok.Data;
 public class QuestionWrapper {
     private Integer id;
     private String question;
-    private String category;
     private String option1;
     private String option2;
     private String option3;
