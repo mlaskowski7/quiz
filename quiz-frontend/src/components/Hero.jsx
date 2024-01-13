@@ -6,7 +6,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Hero = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center'>
+    <div className='h-screen flex flex-col justify-center items-center' id='hero'>
       <div className='relative flex sm:flex-row flex-col sm:gap-6 gap-3 justify-center items-center mx-auto'>
         <h1 className='text-center sm:text-[42px] text-[30px] font-Lemon sm:w-[40%] w-[80%]' >
           Do you want to check your <span className='text-[#7E662A] font-bold font-Lemon'>PROGRAMMING Knowledge?</span>

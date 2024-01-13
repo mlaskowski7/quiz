@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='bg-[#0F2027] text-white flex flex-row justify-between items-center p-[30px] fixed z-[20] w-full h-[40px]'>
       <div>
-        <a href="/" className='hover:opacity-80 transition-all duration-300 ease-in-out'><img src={logo} alt="logo" className='sm:h-[40px] h-[25px]'/></a>
+        <ScrollLink to="hero" className='cursor-pointer hover:opacity-80 transition-all duration-300 ease-in-out'><img src={logo} alt="logo" className='sm:h-[40px] h-[25px]'/></ScrollLink>
       </div>
       <div className='flex flex-row justify-between sm:gap-6 gap-3 items-center'>
         <ScrollLink to="questions" className='text-[10px] sm:text-[16px] cursor-pointer hover:text-[#7E662A] transition-all duration-300 ease-in-out'>Sample Questions</ScrollLink>
