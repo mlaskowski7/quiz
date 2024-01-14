@@ -38,7 +38,7 @@ public class QuizService {
 
     public ResponseEntity<String> getQuizTitle(Integer id) {
         Optional<Quiz> quiz = quizDao.findById(id);
-        return new ResponseEntity<String>(quiz.get().getTitle(), HttpStatus.OK);
+        return new ResponseEntity<>(quiz.get().getTitle(), HttpStatus.OK);
     }
 
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(Integer id) {
@@ -69,4 +69,7 @@ public class QuizService {
     }
 
 
+    public ResponseEntity<List<Quiz>> allQuizes() {
+        return new ResponseEntity<>(quizDao.findAll(), HttpStatus.OK);
+    }
 }

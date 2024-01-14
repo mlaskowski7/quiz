@@ -1,6 +1,7 @@
 package com.mlaskowski7.quizbackend.controller;
 
 
+import com.mlaskowski7.quizbackend.dao.QuizDao;
 import com.mlaskowski7.quizbackend.model.QuestionWrapper;
 import com.mlaskowski7.quizbackend.model.Questions;
 import com.mlaskowski7.quizbackend.model.Quiz;
@@ -14,11 +15,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/quiz")
 public class QuizController {
 
     @Autowired
     QuizService quizService;
+
+    @GetMapping("/all")
+    public ResponseEntity<List<Quiz>> allQuizes(){
+
+        return quizService.allQuizes();
+    }
 
     @PostMapping("/create")
     public ResponseEntity<String> createQuiz(@RequestParam String category, @RequestParam int numOfQues, @RequestParam String title){
@@ -31,6 +39,7 @@ public class QuizController {
     public ResponseEntity<String> getQuizTitle(@PathVariable Integer id){
         return quizService.getQuizTitle(id);
     }
+
 
 
     @GetMapping("/get-quiz-questions/{id}")
