@@ -12,9 +12,9 @@ const Navbar = () => {
       </div>
       <div className='flex flex-row justify-between sm:gap-6 gap-3 items-center'>
         <Link to="/" className='text-[10px] sm:text-[16px] cursor-pointer hover:text-[#7E662A] transition-all duration-300 ease-in-out'>Home</Link>
-        <ScrollLink to="quizes" className='text-[10px] sm:text-[16px] cursor-pointer hover:text-[#7E662A] transition-all duration-300 ease-in-out'>View Quizes</ScrollLink>
+        <Link to="/view-quizes" className='text-[10px] sm:text-[16px] cursor-pointer hover:text-[#7E662A] transition-all duration-300 ease-in-out'>View Quizes</Link>
         <div className="text-[10px] sm:text-[16px] bg-white text-black px-2 py-1 rounded-lg  border-2 hover:border-[#7E662A] hover:text-[#7E662A] hover:bg-transparent transition-all duration-300 ease-in-out">
-          <Link to={"/create-quiz"}>Create New Quiz</Link>
+          <Link to="/create-quiz">Create New Quiz</Link>
         </div>
         
       </div>

@@ -17,11 +17,17 @@ const CreateQuiz = () => {
 
     const onChange = (e) => {
         setQuiz({...quiz,[e.target.name]:e.target.value});
+        console.log(quiz);
     }
 
     const onSubmit = async (e) =>{
         e.preventDefault();
-        await axios.post(`http://localhost:8080/quiz/create?category=${category}&numOfQues=${numOfQues}&title=${title}`);
+        if(category != undefined && numOfQues != undefined && title != undefined){
+          await axios.post(`http://localhost:8080/quiz/create?category=${category}&numOfQues=${numOfQues}&title=${title}`);
+        } else{
+          alert("Please fill all the fields!");
+        }
+        
         navigate("/");
 
     };
