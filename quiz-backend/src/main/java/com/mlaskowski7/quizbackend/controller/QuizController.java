@@ -3,6 +3,7 @@ package com.mlaskowski7.quizbackend.controller;
 
 import com.mlaskowski7.quizbackend.model.QuestionWrapper;
 import com.mlaskowski7.quizbackend.model.Questions;
+import com.mlaskowski7.quizbackend.model.Quiz;
 import com.mlaskowski7.quizbackend.model.Response;
 import com.mlaskowski7.quizbackend.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,13 @@ public class QuizController {
 
     }
 
-    @GetMapping("/get-quiz/{id}")
+    @GetMapping("/get-quiz-title/{id}")
+    public ResponseEntity<String> getQuizTitle(@PathVariable Integer id){
+        return quizService.getQuizTitle(id);
+    }
+
+
+    @GetMapping("/get-quiz-questions/{id}")
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(@PathVariable Integer id){
         return quizService.getQuizQuestions(id);
     }

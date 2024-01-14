@@ -2,7 +2,9 @@ import React from 'react'
 
 const Quizes = () => {
   return (
-    <div id='quizes'>Quizes</div>
+    <div id='quizes'>
+      
+    </div>
   )
 }
 

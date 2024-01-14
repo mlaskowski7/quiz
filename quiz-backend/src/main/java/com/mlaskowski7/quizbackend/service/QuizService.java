@@ -36,6 +36,11 @@ public class QuizService {
         return new ResponseEntity<>("Success", HttpStatus.CREATED);
     }
 
+    public ResponseEntity<String> getQuizTitle(Integer id) {
+        Optional<Quiz> quiz = quizDao.findById(id);
+        return new ResponseEntity<String>(quiz.get().getTitle(), HttpStatus.OK);
+    }
+
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(Integer id) {
         Optional<Quiz> quiz = quizDao.findById(id);
         List<Questions> questionsFromDB = quiz.get().getQuestions();
@@ -62,4 +67,6 @@ public class QuizService {
 
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
+
+
 }

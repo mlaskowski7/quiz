@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="cursor-pointer absolute bottom-10 mx-auto text-white p-2 rounded-full border-2 border-white hover:border-black hover:text-black hover:bg-white transition-all duration-300 ease-in-out">
+      <div className="cursor-pointer absolute sm:bottom-10 bottom-30 mx-auto text-white p-2 rounded-full border-2 border-white hover:border-black hover:text-black hover:bg-white transition-all duration-300 ease-in-out">
         <ScrollLink to='questions'>
           <FontAwesomeIcon icon={faAngleDown}/>
         </ScrollLink>
