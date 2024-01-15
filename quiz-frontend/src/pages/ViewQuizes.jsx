@@ -2,14 +2,18 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, useEffect } from 'react';
 import { faJsSquare, faReact, faPython } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-const Quiz = ({numOfQues, quizTitle, category}) =>(
+const Quiz = ({quizId, numOfQues, quizTitle, category}) =>(
   <div className="flex flex-col gap-3 bg-white justify-start text-left text-black p-8 rounded-xl w-[90%] sm:w-[30%] h-[30%] sm:h-auto border-b-8 border-white hover:border-b-[#7E662A] transition-all duration-300 ease-in-out">
     <h2 className='text-[20px] font-bold'>{quizTitle}</h2>
     <h3><span className='font-semibold text-[#0F2027]'>Category: </span>{category}</h3>
     <h3><span className='font-semibold text-[#0F2027]'>Number Of Questions: </span>{numOfQues}</h3>
+    <Link to={`/answer-quiz/${quizId}`} className="flex justify-center items-center bg-black text-white rounded px-2 py-1 border-2 transition-all duration-300 ease-in-out hover:text-black hover:bg-transparent hover:border-black">
+      Answer Quiz
+    </Link>
   </div>
 )
 
