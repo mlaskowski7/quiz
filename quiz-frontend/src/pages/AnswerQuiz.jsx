@@ -54,6 +54,7 @@ const AnswerQuiz = () => {
                             Pick the correct option:  
                           </label>
                           <select name='answer' value ={answers.find((answer) => answer.id == question.id)?.response || ''} onChange={(e) => onChange(question.id, e.target.value)} className='bg-[whitesmoke] py-1 px-1 outline-none rounded text-black'>
+                            <option value="">Select an option</option>
                             <option value={question.option1}>{question.option1}</option>
                             <option value={question.option2}>{question.option2}</option>
                             <option value={question.option3}>{question.option3}</option>
