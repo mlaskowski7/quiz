@@ -1,6 +1,6 @@
 # Quiz Application
 
-This is a quiz application with a backend developed in Java Spring Framework, a frontend using Vite with React.js, and Tailwind CSS for styling. The database is powered by PostgreSQL. API endpoints were tested using Postman.
+This is a quiz application with backend developed in Java Spring Framework, frontend using Vite with React.js, and Tailwind CSS for styling. The database is powered by PostgreSQL. API endpoints were tested using Postman.
 
 ## Table of Contents
 
