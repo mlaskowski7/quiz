@@ -32,7 +32,7 @@ const ViewQuizes = () => {
     }
 
   return (
-    <div className='relative bg-gradient h-auto sm:h-screen flex flex-col gap-4 justify-center items-center' id='questions'>
+    <div className='relative bg-gradient h-auto sm:min-h-screen flex flex-col gap-4 justify-center items-center' id='questions'>
       <div className='flex flex-col gap-2 w-[90%] justify-center items-center mt-20'>
         <h1 className='text-center sm:text-[42px] text-[30px] font-Lemon sm:w-[40%] w-[80%]' >
           All<span className='text-[#7E662A] font-bold font-Lemon'> Quizes</span>
