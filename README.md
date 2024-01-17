@@ -18,6 +18,8 @@ This is a quiz application with a backend developed in Java Spring Framework, a 
 4. [Development Setup](#development-setup)
 
 5. [Testing](#testing)
+   
+6. [Screenshots](#screenshots)
 
 
 ## Project Structure
@@ -92,6 +94,7 @@ This is a quiz application with a backend developed in Java Spring Framework, a 
 
 ## Testing
 API endpoints were tested using Postman.
+
 
 ### Feel free to contribute or open issues if you find any problems or have suggestions!
 
