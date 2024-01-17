@@ -82,11 +82,11 @@ This is a quiz application with a backend developed in Java Spring Framework, a 
 
 3. Run the backend and frontend servers:
    
-  # In the backend directory
+  1. In the backend directory
   ```bash
   mvn spring-boot:run
   ```
-  # In the frontend directory
+  2. In the frontend directory
   ```bash
   npm run dev
   ```
