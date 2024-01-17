@@ -16,12 +16,8 @@ This is a quiz application with a backend developed in Java Spring Framework, a 
    - [Technologies Used](#technologies-used-1)
 
 4. [Development Setup](#development-setup)
-   - [Clone the repository](#1-clone-the-repository)
-   - [Install dependencies](#2-install-dependencies-for-the-backend-and-frontend)
-   - [Run the servers](#3-run-the-backend-and-frontend-servers)
 
 5. [Testing](#testing)
-   - [API Endpoints Testing](#api-endpoints-testing)
 
 
 ## Project Structure
