@@ -95,6 +95,21 @@ This is a quiz application with backend developed in Java Spring Framework, fron
 ## Testing
 API endpoints were tested using Postman.
 
+## Screenshots
+   1. Main Page
+   ![image](https://github.com/mlaskowski7/quiz/assets/144243838/5e1ea505-0102-4447-b3e6-b542a1916913)
+   ![image](https://github.com/mlaskowski7/quiz/assets/144243838/2e2b45e6-978b-42ff-8671-b3009b8925c3)
+
+   2. View Quizes Page
+   ![image](https://github.com/mlaskowski7/quiz/assets/144243838/6149d026-830c-449a-8b00-4bd72fda8db2)
+
+   3. Create Quiz Page
+   ![image](https://github.com/mlaskowski7/quiz/assets/144243838/f925aa0c-5cb9-49e5-8fd3-789bf956912f)
+
+   4. Answer Quiz Page
+   ![image](https://github.com/mlaskowski7/quiz/assets/144243838/25ac9206-5d92-480f-96c6-0cfb640dbe8b)
+   ![image](https://github.com/mlaskowski7/quiz/assets/144243838/a543d0ac-65a2-4d77-8ec4-736d78a77653)
+
 
 ### Feel free to contribute or open issues if you find any problems or have suggestions!
 
