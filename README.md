@@ -75,10 +75,10 @@ This is a quiz application with backend developed in Java Spring Framework, fron
    
 2. Install dependencies for the backend and frontend:
    ```bash
-   cd backend
-  mvn clean install
-  cd ../quiz-frontend
-  npm install
+   cd quiz backend
+   mvn clean install
+   cd ../quiz-frontend
+  	npm install
 
 3. Run the backend and frontend servers:
    
